@@ -1,0 +1,18 @@
+site_name: Sylvan's Tech Blog
+site_description: AI Agent、LLM、RAG 、Embodied AI
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+
+nav:
+  - 首页: index.md
