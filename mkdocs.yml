@@ -1,18 +1,60 @@
 site_name: Sylvan's Tech Blog
-site_description: AI Agent、LLM、RAG 、Embodied AI
+site_description: AI Agent、Coding、VLM、Embodied AI 学习笔记
+site_author: Sylvan
+site_url: https://wangwei0412.github.io/Sylvan.github.io/
+
+repo_url: https://github.com/wangwei0412/Sylvan.github.io
+repo_name: wangwei0412/Sylvan.github.io
 
 theme:
   name: material
   language: zh
+  icon:
+    logo: material/robot-outline
+
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.indexes
     - navigation.top
     - search.highlight
+    - search.suggest
     - content.code.copy
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: 切换深色模式
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: 切换浅色模式
 
 plugins:
   - search
 
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+
 nav:
   - 首页: index.md
+  - Harness Agent: harness-agent/index.md
+  - Coding: coding/index.md
+  - VLM: vlm/index.md
+  - Embodied AI: embodied-ai/index.md
